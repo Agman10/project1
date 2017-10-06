@@ -1,5 +1,18 @@
+    #content{
+        margin: 0 auto;
+        width: 80%;
+        font-family: ubuntu;
+        color: #002603;
+        font-size: 16px;
+}
+
 body {
     font-size: 16px;
+    
+}
+
+#flash {
+    animation: 10s linear infinite warning;
 }
 
 main {
@@ -42,7 +55,7 @@ h1{
     animation: 1s linear infinite placeholdername;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -50,7 +63,9 @@ h2 {
     animation: 5s linear infinite placeholdername;
 }
 
-
+t2 {
+    text-align: center;
+}
 
 
 @keyframes placeholdername {
@@ -62,5 +77,18 @@ h2 {
     }
     100% {
         color: blue;
+    }
+}
+
+
+@keyframes warning {
+    00% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
     }
 }
