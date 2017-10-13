@@ -1,4 +1,10 @@
-    #content{
+a{
+    color: blue;
+}
+
+
+
+#content_main{
         margin: 0 auto;
         width: 80%;
         font-family: ubuntu;
@@ -6,13 +12,22 @@
         font-size: 16px;
 }
 
+#content_warning{
+        margin: 0 auto;
+        width: 80%;
+        font-family: ubuntu;
+        color: white;
+        font-size: 16px;
+}
+
 body {
     font-size: 16px;
-    
+    background-color: #80f96b;
 }
 
 #flash {
-    animation: 10s linear infinite warning;
+    animation: 10s linear infinite warning_bg;
+    
 }
 
 main {
@@ -34,10 +49,10 @@ img{
 
 
 
-h1{
+#index_1{
     color: red;
     font-family: comic sans ms;
-    font-size: ;
+    font-size: 32px;
     text-align: center;
 }
 
@@ -55,40 +70,64 @@ h1{
     animation: 1s linear infinite placeholdername;
 }
 
-h2 {
+#index_3 {
     text-align: center;
+    font-size: 32px;
+    
 }
 
-h2 {
+#index_3 {
     animation: 5s linear infinite placeholdername;
 }
 
-t2 {
+
+
+#warning_1{
+    font-size: 90px;
     text-align: center;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 300px;
+    color: white;
 }
 
+#warning_2{
+    text-align: center;
+    font-size: 32px;
+    
+    
+}
+    
 
 @keyframes placeholdername {
     00% {
         color: red;
     }
-    50% {
+    25% {
         color: green;
     }
-    100% {
+    75% {
         color: blue;
     }
+    100% {
+        color: red;
+    }
+    
 }
 
 
-@keyframes warning {
+@keyframes warning_bg {
     00% {
-        background-color: red;
+        background-color: #ff0000;
     }
-    50% {
-        background-color: green;
+    25% {
+        background-color: #00ff00;
+    }
+    75% {
+        background-color: #0000ff;
     }
     100% {
-        background-color: blue;
+        background-color: #ff0000;
     }
 }

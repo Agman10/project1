@@ -8,23 +8,72 @@
 
 </head>
     
-<body bgcolor= #80f96b>
+<body>
     
-<main id="content">
+<main id="content_main">
     
  
          
-    <h1>Välkomen till min sak</h1>
+    <b> <div id="index_1"> Välkomen till min sak</div> </b>
    
    <span id="hej_text"> HEJ </span>
     <br>
     <br>
-    <h2> det här är min sida den är jättebra hahahahahahahah</h2>
+    <b> <div id="index_3"> det här är min sida den är jättebra hahahahahahahah </div> </b>
     <a href="warning.html">tryck här</a>
-        
-    <p>^cool^</p>
+    
+    <br>
+    
+    <span id="index_4">  ^cool^</span>
+
 
     <img class="topimg" alt="en bild på luigi" src="/project1/bilder/luigi.png">
+    <br>
+    
+    <span id="index_5"><button onclick="enableDark();"> toggle dark mode </button></span>
+
+    
+    <script>
+        
+        var darkMode = false;
+        
+        function enableDark(){
+            
+            if(darkMode == true){
+                document.body.style.background = "#80f96b";
+                document.getElementById("content_main").style.color = "#002603"; 
+                
+                
+                var anchors = document.getElementsByTagName("a");
+                for (var i = 0; i<anchors.length; i++){
+                anchors[i].style.color = "blue";
+                }    
+               
+                darkMode = false;
+                
+                return;
+            } 
+            
+            if(darkMode == false){
+            
+            // Dark mode settings
+            document.body.style.background = "#424242";    
+            document.getElementById("content_main").style.color = "#FFFFFF";
+        
+            var anchors = document.getElementsByTagName("a");
+            for (var i = 0; i<anchors.length; i++){
+            anchors[i].style.color = "lightblue";
+            }    
+                
+            darkMode = true;
+            return;
+            }
+            
+        }
+        
+        
+    </script>
+    
     
     
 </main>
