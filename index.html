@@ -12,22 +12,24 @@
     
 <main id="content_main">
     
- 
+ <b> <marquee id="index_0" behavior="scroll" direction="left">Hallå </marquee> </b>
+
          
-    <b> <div id="index_1"> Välkomen till min sak</div> </b>
+    <b> <div id="index_1"> Välkomen till min sida</div> </b>
    
-   <span id="hej_text"> HEJ </span>
+   <span id="index_2"> HEJ </span>
     <br>
+    <div id="index_6"> random text here </div>
     <br>
     <b> <div id="index_3"> det här är min sida den är jättebra hahahahahahahah </div> </b>
     <a href="warning.html">tryck här</a>
     
     <br>
     
-    <span id="index_4">  ^cool^</span>
+    <span id="index_4">^cool^</span>
 
 
-    <img class="topimg" alt="en bild på luigi" src="/project1/bilder/luigi.png">
+    <img class="indexImage" alt="en bild på luigi" src="/project1/bilder/luigi.png">
     <br>
     
     <span id="index_5"><button onclick="enableDark();"> toggle dark mode </button></span>
@@ -36,6 +38,20 @@
     <script>
         
         var darkMode = false;
+        var listGreetings = ["Hello!", "HELOOOO!!"];
+        
+        getGreeting();
+        
+        function getGreeting(){
+            
+            var personalGreeting = listGreetings[Math.floor(Math.random()*listGreetings.length)];
+            document.getElementById("index_6").innerHTML = personalGreeting;
+        }
+        
+        
+        
+        
+        
         
         function enableDark(){
             

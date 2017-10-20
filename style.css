@@ -26,8 +26,17 @@ body {
 }
 
 #flash {
-    animation: 10s linear infinite warning_bg;
+    animation: 5s linear infinite warning_bg;
     
+}
+
+#images_div{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+
 }
 
 main {
@@ -40,14 +49,37 @@ img{
 }
 
 .topimg{
+    height: 230px;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    margin: 20px;
+    display: block;
+    border: 5px solid White;
+}
+
+.indexImage{
     height: 250px;
     margin: 0 auto;
     position: relative;
     display: block;
     border: 5px solid Red;
+    
+}
+.topgif{
+    position: absolute;
+    margin: 20px;
+    top: 0px;
+    right: -20px;
+    height: 230px;
+    border: 5px solid White;
 }
 
-
+#index_0{
+    color: red;
+    font-size: 20px;
+    animation:1s linear infinite animated_text;
+}
 
 #index_1{
     color: red;
@@ -56,7 +88,7 @@ img{
     text-align: center;
 }
 
-#hej_text{
+#index_2{
     font-size: 90px;
     text-align: center;
     margin: 0 auto;
@@ -65,7 +97,7 @@ img{
     width: 300px;
     
 }
-#hej_text:hover{
+#index_2:hover{
     color: pink;
     animation: 1s linear infinite placeholdername;
 }
@@ -74,13 +106,29 @@ img{
     text-align: center;
     font-size: 32px;
     
+    
 }
 
 #index_3 {
     animation: 5s linear infinite placeholdername;
 }
 
+#index_6 {
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    
+    animation: 1s linear infinite randomgreeting;
+}
 
+
+
+#warning_0{
+    position: absolute;
+    z-index: -2;
+    left: 15px;
+    
+}
 
 #warning_1{
     font-size: 90px;
@@ -96,9 +144,12 @@ img{
     text-align: center;
     font-size: 32px;
     
+}
+
+#warning_4{
+    text-align: center;
     
 }
-    
 
 @keyframes placeholdername {
     00% {
@@ -129,5 +180,29 @@ img{
     }
     100% {
         background-color: #ff0000;
+    }
+}
+
+@keyframes animated_text {
+    00% {
+        color: lightblue;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: lightblue;
+    }
+}
+
+@keyframes randomgreeting {
+    00% {
+        font-size: 16px;
+    }
+    50% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 16px;
     }
 }

@@ -11,14 +11,14 @@
     
 <main id="content_warning">
     
- 
+ <span id="warning_0"></span>
          
     <span id="warning_1"> HEJ </span>
    
     <br>
     <br>
     
-    <b> <div id="warning_2"> välkommen till döden </div> </b>
+    <b> <div id="warning_2"> 🅱älkommen till döden </div> </b>
     <br>
     <a href="index.html">tryck här om du vill tillbaka till startsidan</a>
     
@@ -26,13 +26,31 @@
     
     <span id="warning_3"> ^cool^ </span>
 
-
-    <img class="topimg" alt="en bild på luigi" src="/project1/bilder/luigi.png">
+    <div id="images_div">
+    <img class="topimg" alt="en bild på luigi" src="/project1/bilder/luigidab.png">
+    <img class="topgif" alt="en bild på toad" src="/project1/bilder/toad.gif">
+    
+    
+    </div>
     
     <br>
+    <div id="warning_4">adfgadifgahdufpgioadfgua9posdguadfigajhsgiodfuhioashg</div>
     
-    <span id="warning_4"> die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die die 😂 die </span>
     
+    <script>
+        
+        var emojiList = ["😂", "🅱","👌","🍆","💩","👺","🔥","💯","👉","💦","🤑"];
+        
+        setInterval(randomEmoji, 30);
+        
+        function randomEmoji(){
+            
+            var randomEmoji = emojiList[Math.floor(Math.random()*emojiList.length)];
+            document.getElementById("warning_0").innerHTML += randomEmoji;
+            
+        }
+        
+    </script>
     
 </main>
 </body>
