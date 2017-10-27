@@ -1,4 +1,5 @@
 a{
+    
     color: blue;
 }
 
@@ -99,7 +100,7 @@ img{
 }
 #index_2:hover{
     color: pink;
-    animation: 1s linear infinite placeholdername;
+    animation: 1s linear infinite rgbtext;
 }
 
 #index_3 {
@@ -110,7 +111,7 @@ img{
 }
 
 #index_3 {
-    animation: 5s linear infinite placeholdername;
+    animation: 5s linear infinite rgbtext;
 }
 
 #index_6 {
@@ -151,7 +152,9 @@ img{
     
 }
 
-@keyframes placeholdername {
+/* Start http://www.cursors-4u.com */ body, a:hover {cursor: url(http://cur.cursors-4u.net/games/gam-12/gam1113.cur), progress !important;} /* End http://www.cursors-4u.com */
+
+@keyframes rgbtext {
     00% {
         color: red;
     }
